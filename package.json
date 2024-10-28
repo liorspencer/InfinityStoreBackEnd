@@ -4,7 +4,9 @@
   "description": "",
   "main": "api.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon api.js",
+    "devcss": "postcss public/styles/tailwind.css -o public/styles/style.css -w"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +14,16 @@
   "dependencies": {
     "@ngrok/ngrok": "^1.4.1",
     "dotenv": "^16.4.5",
-    "express": "^4.21.1"
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.13",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.14"
   }
 }
